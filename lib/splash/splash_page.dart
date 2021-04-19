@@ -1,5 +1,4 @@
 import 'package:devquiz/core/core.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
