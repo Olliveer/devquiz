@@ -59,7 +59,7 @@ class AwnserWidget extends StatelessWidget {
               width: 24,
               height: 24,
               decoration: BoxDecoration(
-                  color: isSelected ? _selectedColorRight : AppColors.darkGreen,
+                  color: isSelected ? _selectedColorRight : AppColors.white,
                   borderRadius: BorderRadius.circular(500),
                   border: Border.fromBorderSide(
                     BorderSide(
