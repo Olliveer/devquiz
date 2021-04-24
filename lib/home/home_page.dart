@@ -20,9 +20,8 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     // TODO: implement initState
-
-    controller.getUser();
     controller.getQuizzes();
+    controller.getUser();
     controller.stateNotifier.addListener(() {
       setState(() {});
     });
@@ -78,6 +77,7 @@ class _HomePageState extends State<HomePage> {
                             MaterialPageRoute(
                               builder: (context) => ChallengePage(
                                 questions: e.questions,
+                                title: e.title,
                               ),
                             ),
                           );

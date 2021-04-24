@@ -22,7 +22,6 @@ class HomeController {
 
   void getQuizzes() async {
     state = HomeState.loading;
-    await Future.delayed(Duration(seconds: 2));
     quizzes = await repository.getQuizzes();
     state = HomeState.success;
   }
