@@ -6,7 +6,12 @@ import 'package:flutter/material.dart';
 class ResultPage extends StatelessWidget {
   final String title;
   final int length;
-  const ResultPage({Key? key, required this.length, required this.title})
+  final int result;
+  const ResultPage(
+      {Key? key,
+      required this.result,
+      required this.length,
+      required this.title})
       : super(key: key);
 
   @override
@@ -35,7 +40,7 @@ class ResultPage extends StatelessWidget {
                         style: AppTextStyles.bodyBold,
                       ),
                       TextSpan(
-                        text: "\ncom 6 de $length acertos.",
+                        text: "\ncom $result de $length acertos.",
                         style: AppTextStyles.body,
                       ),
                     ]),
